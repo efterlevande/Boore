@@ -12,8 +12,6 @@ function playSound() {
     });
   }
 
-
-
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
   if(changeInfo.audible){
     chrome.tabs.update({muted: true});
